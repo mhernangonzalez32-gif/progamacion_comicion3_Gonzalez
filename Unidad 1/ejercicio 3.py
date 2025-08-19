@@ -1,6 +1,7 @@
-nombre = input ("Ingrese su numbre ")
-apellido = input("Ingrese su apellido ")
-edad = input(f"Ingrese su edad {nombre} ")
-nacionalidad = input("Ingrese la localidad donde vive ")
 
-print(f"Soy {nombre} {apellido}, tengo {edad} años, y vivo en {nacionalidad} ")
+primer_numero = int(input("Ingrese un numero natural "))
+segundo_numero = int(input("Ingrese el segundo numero natural "))
+tercer_numero = int(input("Ingrese el segundo numero natural "))
+
+promedio = (primer_numero + segundo_numero + tercer_numero) // 3                    
+print(f"El promedio de estos numero es: {promedio}")                  
