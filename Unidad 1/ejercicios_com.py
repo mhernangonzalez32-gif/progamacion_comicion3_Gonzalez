@@ -11,7 +11,7 @@ print(numero2)
 print("----Ejercicio 3")
 
 suma = numero1 + numero2
-print(f"La suma de estos numero es {suma}")
+print(f"La suma de estos numero es {suma}\n") 
 
 print("----Ejercicio 4")
 
@@ -51,13 +51,15 @@ print("----Ejercicio 10")
 
 longitud = len(cadena)
 
-print(f"La longitud es: {longitud}")
+print(f"La longitud de la string es de: {longitud}")
 
 print("----Ejercicio 11")
 
-precio = int(15.50)
+precio = 15.50
+precio_entero = int(precio)
 
-print(precio)
+print(f"Precio decimal: {precio}")
+print(f"Precio entero: {precio_entero}")
 
 print("----Ejercicio 12")
 
@@ -65,35 +67,36 @@ nombre = "Hernan"
 apellido = "Gonzalez" 
 nombre_completo = f"{nombre} {apellido}"
 
-print(nombre_completo)
+print(f" Mi nombre es: {nombre}\n Mi apellido es: {apellido}\n Mi nombre completo es: {nombre_completo}")
 
 print("----Ejercicio 13")
 
 edad = 29
-print(edad)
+print(f"Mi edad es:{edad}")
 edad = edad + 5  
-print(edad) 
+print(f"Si le sumamos 5 es: {edad}") 
 edad = edad - 10  
-print(edad)
+print(f"Si le restamos 10 es: {edad}")
 
 print("----Ejercicio 14")
 altura = 1.67
-print(altura)
+print(f"Mi altura es: {altura}")
 altura = altura * 4
-print(altura)
+print(f"Si la multiplicamos por 4 es :{altura}")
 altura = altura / 3
-print(altura)
+print(f"Si la dividimos por 3: {altura}")
 
 print("----Ejercicio 15")
 
 nombre = "HERNAN GONZALEZ"
-print(nombre)
+print(f"Mi nombre es: {nombre}")
 nombre_minusculas = nombre.lower() 
-print(nombre_minusculas)
+print(f"Mi nombre en minusculas: {nombre_minusculas}")
 
 print("----Ejercicio 16")
 
 print(nombre)
 nombre_cap = nombre.capitalize()
-print(nombre_cap)
+print(f"Asi quedaria solo la primera en mayuscula: {nombre_cap}")
+
 
