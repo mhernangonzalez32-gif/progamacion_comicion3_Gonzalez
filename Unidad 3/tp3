@@ -5,5 +5,3 @@ print(f"{numeros_aleatorios}")
 
 from statistics import mode, median, mean
 
-mean = numeros_aleatorios
-print(mean)

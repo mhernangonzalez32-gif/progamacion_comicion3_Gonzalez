@@ -64,5 +64,28 @@ if caracteres >= 8 and caracteres <= 14:
 else:    
     print("Por favor, ingrese una contraseña entre 8 y 14 caracteres ")
 
+'''escribir un programa que tome la lista
+numeros_aleatorios, calcule su moda, su mediana y su media y las compare para determinar si
+hay sesgo positivo, negativo o no hay sesgo. Imprimir el resultado por pantalla.'''
 
+import random
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+'''7) Escribir un programa que solicite una frase o palabra al usuario. Si el string ingresado
+termina con vocal, añadir un signo de exclamación al final e imprimir el string resultante por
+pantalla; en caso contrario, dejar el string tal cual lo ingresó el usuario e imprimirlo por
+pantalla.'''
+
+
+'''8) Escribir un programa que solicite al usuario que ingrese su nombre y el número 1, 2 o 3
+dependiendo de la opción que desee:
+1. Si quiere su nombre en mayúsculas. Por ejemplo: PEDRO.
+2. Si quiere su nombre en minúsculas. Por ejemplo: pedro.
+3. Si quiere su nombre con la primera letra mayúscula. Por ejemplo: Pedro.
+El programa debe transformar el nombre ingresado de acuerdo a la opción seleccionada por el
+usuario e imprimir el resultado por pantalla. Nota: investigue uso de las funciones upper(),
+lower() y title() de Python para convertir entre mayúsculas y minúsculas.'''
+ 
+ 
+'''9'''
 
