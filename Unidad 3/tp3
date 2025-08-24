@@ -1,0 +1,9 @@
+import random
+numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+
+print(f"{numeros_aleatorios}")
+
+from statistics import mode, median, mean
+
+mean = numeros_aleatorios
+print(mean)
