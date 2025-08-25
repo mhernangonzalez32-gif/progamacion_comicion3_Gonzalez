@@ -1,7 +1,16 @@
-import random
-numeros_aleatorios = [random.randint(1, 100) for i in range(50)]
+magnitud = float(input("Ingrese la magnitud del terremoto: "))
 
-print(f"{numeros_aleatorios}")
+if magnitud < 3:
+    resultado = "Muy leve (Imperceptible)"
+elif magnitud < 4:
+    resultado = "Leve (ligeramente perceptible)"    
+elif magnitud < 5: 
+    resultado = "Moderado (Sentido por personas, pero generalmente no causa daños)"
+elif magnitud < 6: 
+    resultado = "Fuerte (puede causar daños en estructuras debiles)"
+elif magnitud < 7: 
+    resultado = "Muy fuerte (puede causar daños significativos)"
+else: 
+    resultado = "Extremo (puede causar graves daños a gran escala)"
 
-from statistics import mode, median, mean
-
+print(resultado)
