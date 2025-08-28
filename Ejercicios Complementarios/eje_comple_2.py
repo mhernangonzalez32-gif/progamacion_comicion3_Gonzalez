@@ -30,7 +30,10 @@ if dia_semana == "lunes" or dia_semana == "martes" or dia_semana == "miercoles":
 elif dia_semana == "viernes":
     if dia_num == 1 and (mes_num == 1 or mes_num == 7):
         print("Comienzo de nuevo ciclo")
-        alunos_nuevo_ciclo = int(input("Ingrese la cantidad de alumnos del nuevo ciclo"))
-        arancel = float(input("Ingrese el arancel en $ por cada alumno"))  
+        alunos_nuevo_ciclo = int(input("Ingrese la cantidad de alumnos del nuevo ciclo "))
+        arancel = float(input("Ingrese el arancel en $ por cada alumno "))  
         ingreso_total = alunos_nuevo_ciclo * arancel
         print(f"El ingreso total es: ${ingreso_total:.2f}")      
+
+
+
