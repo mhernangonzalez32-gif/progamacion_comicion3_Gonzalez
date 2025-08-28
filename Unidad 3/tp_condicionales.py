@@ -150,7 +150,7 @@ else:
 print(resultado)
 
 '''10)Escribir un programa que pregunte al usuario en cuál hemisferio se encuentra (N/S), qué mes
-del año es y qué día es. El programa deberá utilizar esa información para imprimir por pantalla
+del año es y qué día. El programa deberá utilizar esa información para imprimir por pantalla
 si el usuario se encuentra en otoño, invierno, primavera o verano.'''
 
 hemisferio = input("Ingrese en que hemisferio se encuentra: (N/S) ").lower()
