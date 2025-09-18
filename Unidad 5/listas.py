@@ -97,3 +97,4 @@ lista_anidada.insert(2, [25.5, 57.9, 30.6])
 lista_anidada.insert(3, False)
  
 print(lista_anidada)
+    

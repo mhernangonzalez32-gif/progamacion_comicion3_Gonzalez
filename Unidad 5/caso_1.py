@@ -71,7 +71,7 @@ while seguir:
             i = 0 
             while i < len(titulos):
                 if titulos[i].lower() == devolucion_titulo:
-                      index = i
+                    index = i
                 i += 1
                 if index == -1:
                     print("Titulo no encontrado.")
@@ -79,7 +79,7 @@ while seguir:
                     cantidad_devolucion = input("Cantidad a devolver.").strip()
                     cantidad = int(cantidad_devolucion)
                     if cantidad < 1 :
-                         print("Debe ser mas que uno")
+                        print("Debe ser mas que uno")
                     else:              
                         ejemplares[index] = ejemplares[index] + cant
                         print("Devolución registrada.")
