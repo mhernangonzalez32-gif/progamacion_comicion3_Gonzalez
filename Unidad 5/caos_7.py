@@ -2,8 +2,8 @@
 # Requisitos: listas paralelas, menú con while, validaciones y manejo de casos borde.
 # Sin diccionarios, sin clases, sin excepciones (solo controles con isdigit y lógica).
 
-titulos = []        # lista de str
-ejemplares = []     # lista de int (mismo índice que 'titulos')
+titulos = [reyleon]        # lista de str
+ejemplares = [0]     # lista de int (mismo índice que 'titulos')
 
 seguir = True
 while seguir:
