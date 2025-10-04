@@ -104,15 +104,39 @@ print(f'divicion {num1_input} / {num2_input} = {divicion}')
 peso en kilogramos y la altura en metros, y devuelva el índice de
 masa corporal (IMC). Solicitar al usuario los datos y llamar a la función para mostrar el resultado con dos decimales.'''
 
+def calcular_imc(peso, altura):
+    icm = peso / (altura**2)
+    return icm
 
+peso_inp = float(input('Ingrese el peso: '))
+altura_inp = float(input('Ingrese la altura en metros: '))
+
+icm = calcular_imc(peso_inp, altura_inp)
+print(f'Su indice de masa corporal es: {icm}')
 
 '''9. Crear una función llamada celsius_a_fahrenheit(celsius) que reciba
 una temperatura en grados Celsius y devuelva su equivalente en
 Fahrenheit. Pedir al usuario la temperatura en Celsius y mostrar el
 resultado usando la función.'''
 
+def celsius_a_fahrenheit(celsius):
+    
+    fahrenheit = (temperatura_celsius * 9/5) + 32
+    print(f"°C {temperatura_celsius}  equivale a °F {fahrenheit}")
+
+temperatura_celsius = float(input("Ingrese la temperatura en celsius: "))
+celsius_a_fahrenheit(temperatura_celsius)
 
 '''10.Crear una función llamada calcular_promedio(a, b, c) que reciba
 tres números como parámetros y devuelva el promedio de ellos.
 Solicitar los números al usuario y mostrar el resultado usando esta
 función.'''
+
+def calcular_promedio(a, b, c):
+    promedio = (a + b + c) / 3                    
+    print(f"El promedio de estos numero es: {promedio}")     
+
+primer_numero = int(input("Ingrese un numero natural "))
+segundo_numero = int(input("Ingrese el segundo numero natural "))
+tercer_numero = int(input("Ingrese el segundo numero natural "))
+calcular_promedio(primer_numero, segundo_numero, tercer_numero)
