@@ -4,7 +4,7 @@ def mostrar_menu():
     print('2) Ver mochila.')
     print('3) Salir.')
 
-
-
+def crear_mochila():
+    
 # Principal 
 mostrar_menu()

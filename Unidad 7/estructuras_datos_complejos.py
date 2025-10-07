@@ -210,3 +210,4 @@ for clave,  valor in paises.items():
 
 print(f'Original {paises}')
 print(f'Invertido {invertido}')
+archivos = open()
