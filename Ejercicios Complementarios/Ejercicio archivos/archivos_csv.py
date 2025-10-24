@@ -2,7 +2,7 @@ import csv
 import os
 
 def inicializar_archivo():
-    if not os.path.exists('productos.csv'):
+    if not os.path.exists('productos.csv'): 
         with open('productos.csv','w', encoding='UTF-8', newline='') as archivo:
             encabezado = ['nombre','precio']
             escritor = csv.DictWriter(archivo, fieldnames=encabezado)
