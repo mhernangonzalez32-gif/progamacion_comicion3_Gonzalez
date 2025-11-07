@@ -14,6 +14,7 @@ def cargar_datos():
         lista = []
         with open('especialidades.csv', 'r',encoding='utf-8') as archivo:
             lector = csv.DictReader(archivo, fieldnames=['especialidades','cupos'])
+            next(lector)
             for fila in lector:
                 try:
                     fila['cupos'] = int(fila['cupos'])
@@ -41,11 +42,31 @@ def especialidad_nueva(lista):
     try:
         cant_espe = int(input("Cuantas Especialidades desea agregar?: "))
         for i in range(cant_espe):
-                nombre = (f'Ingrese en nombre de la especialidad N{i+1}')
-                
+            nombre = (f'Ingrese en nombre de la especialidad N{i+1}').lower().strip()
+            while True:
+                cant_cupos = input('Ingrese los cupos disponibles de la especialidad: ')
+                if cant_cupos.isdigit():
+                    cant_int = int(cant_cupos)
+                    break
+            lista.append({'intrumento':nombre, 'cupos':cant_int})
+        actualizar_datos(lista)
+        return lista
     except ValueError:
-        print('Ingrese un valor valido.')
+        print('Ingrese un valor entero.')
 
+def editar_cupos(lista):
+    especialidad = input('Ingrese en nombre de la especialidad que desea editar: ').strip().lower()
+    for espec in lista:
+        if especialidad == espec['especialidad']:
+            while True:
+                try:
+                    cupos = int(input('Ingrese la cantidad de cupos disponibles: '))
+                    espec['cupos'] = cupos
+                    actualizar_datos(lista)
+                    return lista
+                except ValueError:
+                    print('Ingrese un nuemero entero.')
+                    
 def mostrar_menu():
     iniciar_archivo()
 
@@ -69,7 +90,7 @@ def programa_principal():
             case 1:
                 mostrar_inventario(lista)
             case 2:
-                pass
+                especialidad_nueva()
             case 3:
                 pass
             case 4:
